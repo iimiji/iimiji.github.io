@@ -8,7 +8,7 @@ author1:
   # Used at the bottom of each page and at the top of the `about` layout
   # Markdown enabled, can use multiple paragraphs (enabled by `|`)
   about:             |
-    안녕하세요. 디자인과 개발을 배우고 있는 대학생입니다.
+    안녕하세요. 인간과 상호작용하는 디자인과 개발을 배우고 있는 대학생입니다.
 
   # This photo will be used in the about section
   picture:
