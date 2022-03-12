@@ -64,6 +64,13 @@ legal:
     url:               /NOTICE/
   - title:             CHANGELOG
     url:               /CHANGELOG/
+  - title:             Subcat
+    url:               /subcat/
+    submenu:
+      - title:         Test1
+        url:           /test1/
+      - title:         Test2
+        url:           /test2/
 
 # This text will appear in a `<small>` tag in the footer of every page.
 copyright:             © 2021. All rights reserved.
