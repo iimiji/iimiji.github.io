@@ -10,20 +10,26 @@ description: >
 <!--author-->
 ***
 <center>
-<span style="font-size:170%;font-weight:bold"> 김현우
+<span style="font-size:170%;font-weight:bold"> 김미지
 </span>
 </center>
-<center>MAJOR : AI EENGINEERING</center>
-<center>Korean University</center>
-<center>145, Anam-ro, Seongbuk-gu, Seoul, Republic of Korea</center>
+<center>MAJOR : Interactive of Arts and Technology</center>
+<center>MINOR : Computing Science</center>
+<center>Simon Fraser University</center>
+<center>Vancouver, CANADA</center>
 ## Personal Data
 ---
-> 19xx.xx.xx 대한민국,xx 시,xx 구 출생> 연락처: khw11044@gmail.com
-> Github : [https://github.com/khw11044](https://github.com/khw11044) ## Education
+> 2001.01.05 Born in Korea> 연락처: mijik@sfu.ca
+> Github : [https://github.com/iimiji](https://github.com/iimiji) 
+
 ---
-> Mar.20xx ~ Feb.20xx xx 대학교
+## Education
+---
+> Sep.2019 ~ CURRENT Simon Fraser University
 >
 > IT 융합공학부 (DIVISION OF IT CONVERGENCE ENGINEERING)
+---
+
 ## Research Interest
  
 ---
