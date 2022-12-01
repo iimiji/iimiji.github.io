@@ -97,7 +97,7 @@
                             Frontend Developer <br>
                             UI/UX Designer <br>
                         </h1>
-                        <ul class="home__social">
+                        <div class="home__social">
                             <a href="https://www.linkedin.com/in/mijikim0105" target="_blank" class="home__social-link">
                                 <i class="ri-linkedin-box-line"></i>
                             </a>
@@ -113,7 +113,7 @@
                             <a href="https://drive.google.com/drive/u/0/folders/1HiOxrfiWZSnz7Uhui4wfj7Bo7Zz8NDt2" target="_blank" class="home__social-link">
                                 <i class="ri-attachment-2"></i>                            
                             </a>
-                        </ul>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -131,8 +131,6 @@
                     </div>
                     
 
-                    <!--<img src="assets/img/shape-wawes.svg" alt="" class="home__shape-wawes">
-                    <img src="assets/img/shape-circle.svg" alt="" class="home__shape-circle">-->
                 </div>
 
                     <a href="https://drive.google.com/drive/u/0/folders/1HiOxrfiWZSnz7Uhui4wfj7Bo7Zz8NDt2" target="_blank" class="resume__social-link">
@@ -488,7 +486,6 @@
                     </div>
                 </div>
 
-                <img src="assets/img/shape-circle.svg" alt="qualification image" class="qualification__img">
             </section>
 
             
@@ -509,7 +506,7 @@
                                     <span class="projects__subtitle">UI/UX Design</span>
                                     <h1 class="projects__title">ROOTS</h1>
                                     <a href="assets/project/root.html" class="projects__button">
-                                        View demo <i class="ri-arrow-right-line"></i>
+                                        View detail <i class="ri-arrow-right-line"></i>
                                     </a>
                                 </div>
                             </div>
@@ -522,7 +519,7 @@
                                     <span class="projects__subtitle">UI/UX Design</span>
                                     <h1 class="projects__title">SFU Snap Redesign</h1>
                                     <a href="assets/project/snap.html" class="projects__button">
-                                        View demo <i class="ri-arrow-right-line"></i>
+                                        View detail <i class="ri-arrow-right-line"></i>
                                     </a>
                                 </div>
                             </div>
@@ -535,7 +532,7 @@
                                     <span class="projects__subtitle">HTML/CSS/Javascript</span>
                                     <h1 class="projects__title">TROS</h1>
                                     <a href="assets/project/tros.html" class="projects__button">
-                                        View demo <i class="ri-arrow-right-line"></i>
+                                        View detail <i class="ri-arrow-right-line"></i>
                                     </a>
                                 </div>
                             </div>
@@ -548,7 +545,7 @@
                                     <span class="projects__subtitle">UI/UX</span>
                                     <h1 class="projects__title">Soundcloud Redesign</h1>
                                     <a href="assets/project/soundcloud.html" class="projects__button">
-                                        View demo <i class="ri-arrow-right-line"></i>
+                                        View detail <i class="ri-arrow-right-line"></i>
                                     </a>
                                 </div>
                             </div>
@@ -586,7 +583,7 @@
                             <div class="contact__data">
                                 <span class="contact__data-title">Email</span>
                                 <span class="contact__data-info">mijik@sfu.ca</span>
-                                <a href="mailto: mijik@sfu.ca" class="contact__button">
+                                <a href="mailto:mijik@sfu.ca" class="contact__button">
                                     Write me <i class="ri-arrow-right-line"></i>
                                 </a>
                             </div>
@@ -607,7 +604,7 @@
                             <i class="ri-send-plane-line"></i> Write me your project
                         </h3>
 
-                        <form action="" class="contact__form" id="contact-form">
+                        <form action="do" class="contact__form" id="contact-form">
                             <div class="contact__form-div">
                                 <label class="contact__form-tag">Names</label>
                                 <input type="text" name="user_name" required placeholder="Write your names" class="contact__form-input" id="contact-name">
@@ -625,14 +622,32 @@
 
                             <p class="contact__message" id="contact-message"></p>
 
+                            <a class="contact__button" href="#popup1">Submit
+                                <i class="ri-arrow-right-up-line"></i>
+                            </a>
+
+                            <!--
                             <button type="submit" class="contact__button">
                                 Submit <i class="ri-arrow-right-up-line"></i>
-                            </button>
+                            </button>-->
                         </form>
                     </div>
                 </div>
             </section>
         </main>
+
+                <!--==================== PopUP ====================-->
+
+        <div id="popup1" class="overlay">
+            <div class="popup">
+                <h2>Submitted</h2>
+                <a class="close" href="#contact">&times;</a>
+                <div class="pop-content">
+                    Thank you for contacting me; <br>
+                    I will contact you as soon as possible.
+                </div>
+            </div>
+        </div>
 
         <!--==================== FOOTER ====================-->
         <footer class="footer">
@@ -653,7 +668,7 @@
                     </li>
                 </ul>
 
-                <ul class="footer__social">
+                <div class="footer__social">
                     <a href="https://www.linkedin.com/in/mijikim0105" target="_blank" class="footer__social-link">
                         <i class="ri-linkedin-box-line"></i>
                     </a>
@@ -668,7 +683,7 @@
                     <a href="https://drive.google.com/drive/u/0/folders/1HiOxrfiWZSnz7Uhui4wfj7Bo7Zz8NDt2" target="_blank" class="footer__social-link">
                         <i class="ri-attachment-2"></i>                            
                     </a>
-                </ul>
+                </div>
 
                 <span class="footer__copy">
                     &#169; Copyright Miji Kim. All rights reserved

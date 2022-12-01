@@ -790,6 +790,73 @@ body.dark-theme {
   left: 1.5rem;
 }
 
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  
+  margin: 20rem auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+  text-align: center;
+  margin-top: 0;
+  color: #333;
+  font-family: 'lora';
+  margin-top: 2rem;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #06D85F;
+}
+.popup .pop-content {
+  text-align: center;
+  max-height: 30%;
+  overflow: auto;
+}
+.pop-content {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 700px){
+  .box{
+    width: 70%;
+  }
+  .popup{
+    width: 70%;
+  }
+}
+
 /* Status color */
 .color-red {
   color:hsl(4, 71%, 50%);
@@ -798,7 +865,6 @@ body.dark-theme {
 .color-blue {
   color: hsl(207, 56%, 45%);
 }
-
 
 .resume__social-link {
   justify-self: center;
@@ -809,9 +875,9 @@ body.dark-theme {
   padding: 1rem;
   padding-left: 1.2rem;
   border-radius: 2rem;
-  /*box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.13);*/
   border: 1px solid var(--title-color);
 }
+
 .resume__social-link:hover {
   color: var(--blob-color);
   border: 1px solid var(--blob-color);
@@ -1321,18 +1387,15 @@ body.dark-theme {
 }
 .root-text p{
   color: #fff;
-	font-size: var(--h3-font-size);
+	font-size: var(--explain-font-size);
 	font-family: 'lora';
 	margin-bottom: 3rem;
   opacity: 100%;
-
+  margin-left: 20rem;
+  margin-right: 20rem;
 }
 .root-text a{
-	font-size: var(--normal-font-size);
-	font-family: 'lora';
-	margin-bottom: 3rem;
   color: rgb(255, 255, 255);
-  text-shadow:0 2px 2px rgb(190, 190, 190);
   opacity: 80%;
   transition: .2s; 
 }
@@ -1452,3 +1515,18 @@ body.dark-theme {
     margin-right: 2rem;
   }
 }
+
+
+
+
+
+
+
+
+/*
+REFERENCE
+
+https://codepen.io/imprakash/pen/GgNMXO
+
+
+*/
