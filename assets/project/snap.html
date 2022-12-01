@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+
+        <!--=============== REMIXICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+        
+        <!--=============== SWIPER CSS ===============-->
+        <link rel="stylesheet" href="../css/swiper-bundle.min.css">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="../css/styles.css">
+
+        <title>Portfolio website Miji</title>
+    </head>
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="../../index.html" class="nav__logo">
+                    <img src="../img/logo.png" alt="logo" />
+                </a>
+                <a href="../../index.html" class="nav__logo_white">
+                    <img src="../img/logo-white.png" alt="logo-white" />
+                </a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list grid">
+                        <li class="nav__item">
+                            <a href="../../index.html#home" class="nav__link active-link">
+                                <i class="ri-home-5-line"></i> Home
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="../../index.html#about" class="nav__link">
+                                <i class="ri-briefcase-line"></i> About
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="../../index.html#skills" class="nav__link">
+                                <i class="ri-trophy-line"></i> Skills
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="../../index.html#qualification" class="nav__link">
+                                <i class="ri-book-open-line"></i> Qualification
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="../../index.html#projects" class="nav__link">
+                                <i class="ri-image-line"></i> Projects
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="../../index.html#contact" class="nav__link">
+                                <i class="ri-chat-3-line"></i> Contact
+                            </a>
+                        </li>
+                    </ul>
+
+                    <!-- Close button -->
+                    <div class="nav__close" id="nav-close">
+                        <i class="ri-close-line"></i>
+                    </div>
+                </div>
+
+                <div class="nav__buttons">
+                    <!-- Toggle button -->
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="ri-menu-4-line"></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+
+        <!----home--->
+	<section class="snap" id="snap">
+		<div class="root-text">
+			<h1>SFU SNAP DINING</h1>
+			<p>When it comes to meal time, students and staff must eat. <br>
+                Even if they are not hungry, they need a variety of intakes, <br>
+                such as caffeine drinks and snacks, to accompany them when they are sleepy. <br>
+                All campuses of Simon Fraser University provide a variety of eateries near them. <br>
+                To find the right eatery to go to, they use the dining feature of the SFU Snap <br>
+                app to explore their options. The dining feature only shows the name and operating <br>
+                hours of the nearby eateries, so users have to use other sources of information <br>
+                to find out the types of food sold, distance and reviews, etc.<br>
+			<a href="#new" class="btn">View Prototype</a>
+		</div>
+	</section>
+
+    <!--==================== Explain ====================-->
+    <section class="explain section" id="explain">
+        <h3 class="explain__title">Part 2a - Context of Use & Requirements Establishment</h3>
+        <h3 class="explain__title">i. Context Identification</h3>
+        <p>
+            When it comes to meal time, students and staff must eat. Even if they are not hungry, 
+            they need a variety of intakes, such as caffeine drinks and snacks, to accompany them 
+            when they are sleepy. All campuses of Simon Fraser University provide a variety of eateries 
+            near them. To find the right eatery to go to, they use the dining feature of the SFU Snap app 
+            to explore their options. The dining feature only shows the name and operating hours of the nearby 
+            eateries, so users have to use other sources of information to find out the types of food sold, 
+            distance and reviews, etc. They typically want to find a good eatery as soon as possible. 
+            They use the app around mealtime, mostly on their phone. They will most likely use the app 
+            at any SFU campuses. Users who use this app can have different dining purposes and a different 
+            understanding of school geography. So, we will set up a persona for each of the three distinct 
+            user groups to develop the app.
+            
+        </P>
+        <span class="explain__subtitle">User Persona</span>
+        <div class="img-box">
+            <img src="../img/snap/persona.jpg" alt="detail-img">
+        </div>
+
+        <h3 class="explain__title">ii. Functional and Non-Functional Requirements</h3>
+        <p>
+            <strong>Requirement #1:</strong><br>
+            Users should be able to make a review about an eatery based on its atmosphere, taste, price and accessibility using a 5 star rating system.
+            <br><strong>Non Functional Requirement:</strong><br>
+            The system should update the lists of reviews less than 1 seconds after it has been written
+            <br><br><strong>Functional Requirement #2:</strong><br>
+            Users should be able to save their reviews on profile and share the profile to others directly from the app.
+            <br><strong> Non Functional Requirement:</strong><br>
+            The shared profile should only show the name of eatery, item bought, ratings and the review to protect personal informations
+            <br><br><strong>Functional Requirement #3:</strong><br>
+            Users should be able to see statistics such as number of visitors on particular hours, frequently appearing words on the reviews and average time spent on the eatery from the app.
+            <br><strong>Non Functional Requirement:</strong><br>
+            The system should highlight the statistics related to current situations such as time and locations.  
+        </P>
+        <h3 class="explain__title">Part 2b - Medium-Fidelity Prototypes</h3>
+        <h3 class="explain__title">i. Design Process</h3>
+
+        <p>
+            We have reviewed each other’s LFP sketches from part 1 of the project. 
+            After reviewing, we have decided the general look of the interface from one of the sketches. 
+            Then, we have researched other review services such as google reviews, yelp and tripadvisor 
+            and integrated their elements to our LFP sketches. The sketch was developed and used as a 
+            blueprint of our final MFP design.
+        </p>
+        <h3 class="explain__title">ii. Horizontal MFP</h3>
+
+        <div class="img-box">
+            <img src="../img/snap/Horizontal.jpg" alt="detail-img">
+        </div>
+        <p>
+            Upon opening the app, users will first see the dashboard screen. 
+            Users can tap the dining button on the grid, or tap the “More” button on 
+            the bottom tab and press the dining button to access the dining feature. 
+            Users can scroll the list and tap one eatery to find more details. 
+            By tapping “About” on the dining place page, users can see the detailed 
+            information about the eatery including statistics about the eatery including 
+            the general number of visitors on particular slot of time, frequently appearing 
+            terms on review and average time spent at the place. The address tab and about tab 
+            both highlight the statistics related to current situations. The map address tab 
+            shows the distance to the eatery from the current position and the about tab highlights 
+            the current time slot on the “popular times” section. These meet our third functional 
+            requirement and its non-functional requirement.
+        </p>
+        <div class="img-box">
+            <img src="../img/snap/Horizontal2.jpg" alt="detail-img">
+        </div>
+        <p>
+            While on the same page, users can now tap the “Review” tab to see the reviews on the eatery. 
+            There is a button that says “Leave a review”. By pressing the button, users can write their 
+            own review, using the 5 star rating system. Users rate the eatery's atmosphere, taste, 
+            price and accessibility and the average of these four entries will be shown as the review, 
+            satisfying our first functional requirement. And the app will update the list of reviews as 
+            soon as the users post their own reviews. As mentioned on the first non-functional requirement, 
+            this will take less than 1 second.
+            On the dining page, users can tap the profile icon on the top right corner to access the profile page. 
+            By accessing the profile page, users can see the reviews they have written and eateries they have favored 
+            to access later. Users can also share the link of their profile by tapping the “share” button on top 
+            right so that others can see the reviews made by the users. This fulfills our second functional requirement. 
+            And to fulfill its non-functional requirement, the shared link will only show the name of eatery, 
+            item bought ratings and review when the profile is shared in order to protect any sensitive information.
+
+        </p>
+        
+        <h3 class="explain__title">iii. Vertical MFP</h3>
+
+        <div class="img-box">
+            <img src="../img/snap/vertical.jpg" alt="detail-img">
+        </div>
+        <p>
+            For our vertical MFP, we have implemented the “reviewing feature” in depth. 
+            The situation is that a user (let’s call them ‘T’) wants to leave a review to an eatery 
+            they found using the SFU snap app. T can go to the dining feature by tapping the “Dining” 
+            button on the grid. The dining feature will show lists of eateries in a grid, as shown on 
+            the screenshot. T can tap on the eatery they wish to leave a review of. T can tap on the 
+            “Review” tab to access the review page and press the “Leave a review” button to make a review 
+            of the eatery. The Review page shows four sets of 5 stars. Each set represents the rating of 
+            Atmosphere, taste, price and accessibility.
+            To leave a review, T has to rate each attribute out of 5 stars, 1 star being the worst and 5 stars 
+            being the best. T can also write their thoughts on the text box provided. We have added placeholders 
+            in the text box for better usability. T cad add up to 5 images as part of the review if they wish to. 
+            T can tap the “Post” button on the top right corner to post the review. The review itself will show the 
+            average of ratings made by the users and the list will be updated less than 1 second after T has posted 
+            the review so that T can see their review right away. However, if T wishes to not write the review, 
+            T can always press the “X” button on top left to delete the progress and go back to the review page. 
+            Pressing the “X” button will show a confirmation prompt to prevent deleting the whole review by mistake, 
+            as shown on the screenshot below.
+        </p>
+        <div class="img-box">
+            <img src="../img/snap/vertical2.jpg" alt="detail-img">
+        </div>
+
+        <p>
+            In addition, the feature will show the general statistics such as popular times and frequently 
+            used terms based on the reviews made by the users. These statistics will be shown to all users 
+            accessing the review feature. To improve the usability, the feature will highlight the current time 
+            slot on the popular time statistics, letting users to recognise the current time slot right away and 
+            expect a certain amount of crowd at the eatery. The whole process is a combination of 
+            features that satisfies our first and second functional and non-functional requirements.
+        </p>
+        <h3 class="explain__title">iV. Commentary on MFP</h3>
+        <p>
+            There were some limits when designing the MFP. For example, when implementing a prototype using Figma, 
+            it was difficult to fix a footer that could be moved to another page at the bottom. The initial intention 
+            of the design was to make a long scrollable screen on figma. However, we could not find a way to fix the 
+            footer at the bottom of the phone screen while configuring user interactions that lets users scroll the 
+            page freely. As a result, we ended up making a screen where the bottom is cropped off and overlapped 
+            by the footer to look as if there is more content.
+            To add more, by fixing one problem on interaction paths, the paths began to be built without 
+            considering in advance that it had to be changed on all pages containing the object. 
+            As a result, more diverse outputs according to user interactions were less varied that we expected.
+        </p>
+
+        <h3 class="explain__title">Part 2c - Analytical Evaluation & Reflection</h3>
+        <h3 class="explain__title">i. Cognitive Walkthrough</h3>
+
+        <p>
+            <strong>Context and scenario given to the evaluator:</strong><br>
+            You are a new student at Simon Fraser University. 
+            You are having a hard time finding a place to eat around Burnaby campus, 
+            where you spend the most time of the day. You heard about the SFU snap app 
+            at welcome orientation and decided to use the dining feature of the app to find a 
+            good place to eat. You have found a place near you and saw the reviews as well using 
+            the dining feature. After eating from the chosen eatery, you decide to leave a review 
+            of your experience with the chosen eatery on the app as well.
+        </p>
+        <p>
+            <strong>Your task:</strong><br>
+            1. Find the review page of the given eatery.<br>
+            2. Leave a review about the given eatery on the system.
+        </p>
+        <div class="img-box">
+            <img src="../img/snap/table.jpg" alt="detail-img">
+        </div>
+        <h3 class="explain__title">Summary of walkthrough:</h3>
+        <p>
+            The walkthrough was done without a big struggle. The evaluator has commented that our design 
+            was very intuitive and eye-catching so he had no trouble finding paths for his tasks. 
+            For example, for task 1, he was able to navigate to the review page of given restaurants as the 
+            buttons were all labeled. Also, he has also commented that he really liked the overall design and 
+            efficient use of the space.
+            However, despite these strengths, there were some issues the evaluator has brought up. One issue was 
+            that for task 1, although it was easy to find the paths, there were some stub buttons that responded 
+            but did not do much, so he felt there was not much he could do. Also, for task 2, he commented that even 
+            though he was able to understand the star rating system fairly quickly, he hesitated to tap on the gray 
+            button right away because there were no instructions.
+            To fix these issues, we could implement more buttons on the grid to do their tasks instead of bringing 
+            “under development” prompts up for better experience. Also, we could add “Please tap on the stars to rate” 
+            instruction above the star rating system for more clarity.
+        </p>
+        <h3 class="explain__title">ii. Reflection</h3>
+        <p>
+            The redesign of the SFU snap app was an interesting task because not only we were asked to 
+            redesign an existing app, but also we had to design a new system - the review system - to an 
+            existing feature. So we had to study the overall design and apply to our design for better consistency. 
+            Nonetheless, it was a good chance for us to apply what we have learnt in class to real life problems.
+        </p>
+        <p>
+            The whole process started with undergoing heuristic evaluation of the SFU snap app. For the evaluation, 
+            we have referenced Nielsen's 10 usability heuristics for User Interface Design. This has given us a clear 
+            understanding of heuristics and what it means to design a good user interface. We have used the app ourselves 
+            and also interviewed a few students who actually use the SFU snap app. From the first and second hand 
+            experience, we were able to point out a number of features in the app. Some were good and some were bad 
+            in terms of usability heuristics. We have learnt more from the bad features as we were able to find out 
+            what NOT to do in order to design a good user interface.
+        </p>
+        <p>
+            For context identification, we have interviewed people at SFU, including students and faculty members on 
+            their experience with the SFU snap app and their ideas on review features - how would they want the feature 
+            to turn out. It was a very insightful opportunity to listen to the opinions from the actual users. We were 
+            able to find some common ground most of the interviewees shared and create a context for our project.
+        </p>
+        <p>
+            From the context and interviews, we had come up with 3 personas. It was fairly easy as we were able to use 
+            the goals and struggles straight from the interviews. Not all ideas linked to the review mechanism directly, 
+            but we were able to generate relevant ideas based on some answers from the interview.
+        </p>
+        <p>
+            We spend more time on coming up with good struggles for the personas as we thought functional requirements should be more focused on solving those struggles. We wanted the functional requirements to be meaningful. After coming up with functional requirements, we came up with non functional requirements for each functional requirement by brainstorming how to make those functional requirements more convenient to the users. We have looked back to the slides, other examples such as google review to make sure the non-functional requirements were also meaningful as we believed meaningful functional and non-functional requirements will be a foundation to a good user interface design.
+            
+        </p> 
+        <p>
+            From these functional requirements, we have come up with the LFP sketches. As mentioned in part 2b, we have integrated our LFPs from part 1 and features from other services. From the sketches, we have developed it into MFP. Making MFP was the most difficult part of our project. We were both not very experienced with Figma so we had to search for tutorials and learn how to use the tool. We wanted the final product to be as perfect as possible. To achieve this, we have searched and gathered images, reviews and documented the sources as well. In the end, it turned out fine, but we definitely feel there is more room for improvements.
+        </p>
+        <p>    
+            One thing we could have done better was to implement more buttons rather than leaving it as a stub where it brings up a prompt saying “under development”. We focused more on implementing functionalities that satisfied our requirements and ran out of time as implementing all the buttons were very time consuming.
+        </p>
+        <p>
+            Other improvements we could have done was to bring more of the original design. At the moment, we have lost a major part of SFU identity as we dropped using SFU colours. Although this is more of an aesthetic aspect, we believe this is important as SFU snap app is the official SFU app.
+        </p>
+        <p>
+            To add more, as mentioned in part 2b, there were certain limits within Figma that we could not overcome. If we were to do the assignment again, we may use other tools or find a way to overcome the limits for better design.
+        </p>
+        <p>
+            Final step for us was the cognitive walkthrough. Before undergoing the walkthrough, we have revisited the slides from week 10 and suggested readings and videos to make sure we understand the process and expected outcome. The walkthrough went very smoothly and we knew this even before the cognitive walkthrough as we were very confident with our final designs. However, the comments and issues the evaluator brought up have surely given us a new perspective on our design and ways to improve it, as mentioned in the summary above.
+        </p>
+        <p>
+            Overall, it was a challenging assignment as there were lots of new concepts and tools we had to get familiar with. However, we were happy how our design turned out and how we, as a team and as students, have learned and understood so much from actually redesigning the SFU SNAP app and implementing the review feature.
+        </p>
+        
+
+    </section>
+
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer">
+            <div class="footer__container container">
+                <h1 class="footer__title">Miji</h1>
+                <p>Frontend Developer</p>
+                <p>UI/UX Designer</p>
+
+                <ul class="footer__list">
+                    <li>
+                        <a href="#home" class="footer__link">Home</a>
+                    </li>
+                    <li>
+                        <a href="#skills" class="footer__link">Skills</a>
+                    </li>
+                    <li>
+                        <a href="#projects" class="footer__link">Projects</a>
+                    </li>
+                </ul>
+
+                <ul class="footer__social">
+                    <a href="https://www.linkedin.com/in/mijikim0105" target="_blank" class="footer__social-link">
+                        <i class="ri-linkedin-box-line"></i>
+                    </a>
+
+                    <a href="https://github.com/iimiji" target="_blank" class="footer__social-link">
+                        <i class="ri-github-line"></i>
+                    </a>
+
+                    <a href="https://www.youtube.com/@galleryme2147" target="_blank" class="footer__social-link">
+                        <i class="ri-youtube-line"></i>
+                    </a>
+                    <a href="https://drive.google.com/drive/u/0/folders/1HiOxrfiWZSnz7Uhui4wfj7Bo7Zz8NDt2" target="_blank" class="footer__social-link">
+                        <i class="ri-attachment-2"></i>                            
+                    </a>
+                </ul>
+
+                <span class="footer__copy">
+                    &#169; Copyright Miji Kim. All rights reserved
+                </span>
+            </div>
+        </footer>
+
+
+        <!--========== SCROLL UP ==========-->
+        <a href="#" class="scrollup" id="scroll-up"> 
+            <i class="ri-arrow-up-line"></i>
+        </a>
+
+        <!--=============== SCROLLREVEAL ===============-->
+        <script src="../js/scrollreveal.min.js"></script>
+
+        <!--=============== SWIPER JS ===============-->
+        <script src="../js/swiper-bundle.min.js"></script>
+        
+        <!--=============== MAIN JS ===============-->
+        <script src="../js/main.js"></script>
+    </body>
+</html>

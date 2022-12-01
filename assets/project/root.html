@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+
+        <!--=============== REMIXICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+        
+        <!--=============== SWIPER CSS ===============-->
+        <link rel="stylesheet" href="../css/swiper-bundle.min.css">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="../css/styles.css">
+
+        <title>Portfolio website Miji</title>
+    </head>
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="../../index.html" class="nav__logo">
+                    <img src="../img/logo.png" alt="logo" />
+                </a>
+                <a href="../../index.html" class="nav__logo_white">
+                    <img src="../img/logo-white.png" alt="logo-white" />
+                </a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list grid">
+                        <li class="nav__item">
+                            <a href="../../index.html#home" class="nav__link active-link">
+                                <i class="ri-home-5-line"></i> Home
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="../../index.html#about" class="nav__link">
+                                <i class="ri-briefcase-line"></i> About
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="../../index.html#skills" class="nav__link">
+                                <i class="ri-trophy-line"></i> Skills
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="../../index.html#qualification" class="nav__link">
+                                <i class="ri-book-open-line"></i> Qualification
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="../../index.html#projects" class="nav__link">
+                                <i class="ri-image-line"></i> Projects
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="../../index.html#contact" class="nav__link">
+                                <i class="ri-chat-3-line"></i> Contact
+                            </a>
+                        </li>
+                    </ul>
+
+                    <!-- Close button -->
+                    <div class="nav__close" id="nav-close">
+                        <i class="ri-close-line"></i>
+                    </div>
+                </div>
+
+                <div class="nav__buttons">
+                    <!-- Toggle button -->
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="ri-menu-4-line"></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+
+        <!----home--->
+	<section class="root" id="root">
+		<div class="root-text">
+			<h1>Root</h1>
+			<p>Root is a family social communicating application that allows users to engage,<br> 
+                connect, and share updates or news with their families abroad. Designed for easier <br> 
+                 accessibility for seniors, users have the ability to send messages by setting<br>
+                 appropriate time zones that their family member is in.</p>
+			<a href="#new" class="btn">View Prototype</a>
+		</div>
+	</section>
+
+    <!--==================== Explain ====================-->
+
+    <section class="explain section" id="explain">
+        <h3 class="explain__title">Idea & Interaction Framework</h3>
+        <!--<span class="explain__subtitle">My favorite skills</span>-->
+        <p>Based on our interview and research with families living abroad, our intended users are seniors over 75 years old who have family members located on various parts of the world.
+
+            To keep families connected, or more specifically to allow the seniors to feel connected with their families irrespective of geographical distances or physical impariments with design features that are considerate of senior’s physical limitations</p>
+        <div class="img-box">
+            <img src="../img/root/intendeduser.jpg" alt="detail-img">
+          </div>
+
+          <h3 class="explain__title">Persona</h3>
+        <span class="explain__subtitle">Persona 01</span>
+        <p>Our first persona is Judy who is 75 years old single woman with a daughter living in Japan and a son living in Seattle. 
+            Her time at home alone has increased because of the pandemic and she feels lonely. 
+            She isn't very good with smartphones, but she likes to take pictures with it to get new memories.
+            
+            Her pain point is she wants to message her family, but doesn't want to bother them because of the time difference.She wants to learn how to use apps that would make it easy to communicate with family, but she doesn’t have the knowledge and couldn't get help to do so.
+            
+            The solutions are To design an app that is considerate with each user's time zone differences
+            and provide a service with minimal effort and learning stages.
+        </P>
+        <span class="explain__subtitle">Persona 02</span>
+        <p>
+            Our second persona is married 85 years old senior Jason Smith, living in Vancouver.
+            ​​He is the person who shows the name of our application, ROOT itself.
+            He has four children living in different time zones and six grandchildren.
+            For jason, it is hard to say morning greetings because he have to remember all the time zone before he contact.
+            He hopes he has a messaging function that sends messages to each child at a specific scheduled time so that he can deliver good morning and night greetings without memorizing all the time differences in every area.
+        
+        </p>
+        <div class="img-box">
+            <img src="../img/root/personadetail.png" alt="detail-img">
+        </div>
+
+        <h3 class="explain__title">Sketches</h3>
+        <p>Here’s our initial pen-and-paper sketches we developed for our ROOT interface.
+            First is the main home page where users have 4 different menus to either
+            view their family member profiles
+            see updates or memories
+            access their photo album
+            and play games with their family members online. 
+            On each of the member’s profile, the user is able to see the country they are in, their time zone, and the weather.
+            from the profile they can directly voice or video call or send them a message
+            when the user wants to send a message, they can schedule to send it based on time zones. Hence, they can set the message to send out in the morning, evening or customize it for their preference.
+            In the sharing memories section, users are able to upload and react to any updates, images, or videos that members post.
+            and in the photo album, they can view all images within the app, and also upload any photos they have taken 
+            finally, in the games section
+            users have access to various games that they can play or compete with their family online with games like pictionary, wordle, or scrabble</p>
+
+        <div class="img-box">
+            <img src="../img/root/sketches1.jpg" alt="detail-img">
+        </div>
+        <div class="img-box">
+            <img src="../img/root/sketches2.jpg" alt="detail-img">
+        </div>
+
+        <h3 class="explain__title">Storyboard</h3>
+        <p>
+            This is our storyboard with the scenario of Judy, our persona who wants to send a message to her daughter Mika in Japan.
+            She wants to text her daughter but she doesn’t want to bother her late at night
+            so she opens the ROOT app, and from the main menu she selects ‘view memebers’
+            she finds mika’s profile and see’s that it’s 2:00 AM in Japan
+            she selects send message and proceeds to write a morning message to Mika and set it so that it arrives at 9:00 AM in Japan
+            Next day, Mika wakes up and recieves the message her mother has sent
+        </p>
+        <div class="img-box">
+            <img src="../img/root/storyboard.jpg" alt="detail-img">
+        </div>
+
+        <h3 class="explain__title">Design Variations</h3>
+        <p>
+            This is our design interaction presentation for our application Root, an easy-to-use platform for seniors to communicate with their family abroad. 
+
+            This week, we began by exploring different design variations for our application based on our personas from last week: experimenting with different colour palettes, interaction elements and more. 
+
+            with the first design, we made the main interaction with the family member to be all from the member profile 
+            and the second design we focused on a different theme and colour with a mix of orange and blue with simple interactions
+            and finally the third design we tried to use bigger buttons and image sizes for easier interactions for the elders which was the design we decided to focus with 
+        </p>
+        <div class="img-box">
+            <img src="../img/root/Design Variations.jpg" alt="detail-img">
+        </div>
+        <h3 class="explain__title">Style Guide</h3>
+        <p>
+            For our style guide, the typeface we chose was roboto, which consists of modern and simplified characters with good readability.
+
+            We mainly used orange as the primary colour. The warm colour helps bring warmth and intimacy to our application. 
+            
+            Also, we tried to pay attention to the font size and colour contrast, so it is more accessible for users who might have harder time reading texts on mobile.
+            
+            To maintain consistency and simplify development, we used a layout grid of 4 columns.
+            
+            We focused on using well-structured interface elements and larger icons with text for a more user-friendly interaction for seniors who may be struggling with vision or fine motor control issues.
+        </p>
+        <div class="img-box">
+            <img src="../img/root/Style Guide.jpg" alt="detail-img">
+        </div>
+
+        <h3 class="explain__title">User Flow</h3>
+        <span class="explain__subtitle">User Login</span>
+        <p>
+            The user flow for login page. When a user opens our application, first there is a splash screen and then a login screen. For first-time users without an account, they will need to register via name, email, date of birth and set password.
+        </p>
+        <div class="img-box">
+            <img src="../img/root/user login.jpg" alt="detail-img">
+        </div>
+
+        <span class="explain__subtitle">Home Page</span>
+        <p>
+            This is our home page of our application,
+            at the very top, users are able to see their own profile
+            followed by a search bar that allows them to search for specific family members
+            and Considering the feedback we got last week, we designed our home page so that users are able to access the family members directly from the home page to focus on creating a more family member oriented application
+
+            On the family members profile, users are able to engage with them in different directions
+            such as sending a message, voice call, and video call function
+            also from each of the family member’s profile the user is also able to see the country they are in, their time zone, and the weather.
+        </p>
+        <div class="img-box">
+            <img src="../img/root/home page.jpg" alt="detail-img">
+        </div>
+
+        <span class="explain__subtitle">Birthday Feature</span>
+        <p>
+            Another feature we decided to include was the birthday feature that allows users to know when it is a birthday of a family member
+            we included a one-time pop up that shows up when a user opens the app 
+            and a birthday cake icon that is displayed on the member throughout the day of their birthday 
+            we also included an additional feature of allowing users to pin a specific family member so that they could have easier accesibility to those they engage often with.
+        </p>
+        <div class="img-box">
+            <img src="../img/root/birthday feature.jpg" alt="detail-img">
+        </div>
+
+        <span class="explain__subtitle">Send Message</span>
+        <p>
+            Next is the user flow for sending a message, 
+            the user can input their messsage either by their keyboard, or the speech to text feature where when they click on the microphone icon, they are able to input their voice which was included for seniors who might have a harder time typing their message.
+            finally once the user hits send, a message sent page appears with confirmation of the time of when it will be sent to the family member
+        </p>
+        <div class="img-box">
+            <img src="../img/root/send message.jpg" alt="detail-img">
+        </div>
+
+        <span class="explain__subtitle">Message Page</span>
+        <p>
+            Apart from the previously introduced send message feature, the message page can view the previous conversation 
+            record or continue the conversation directly. Users can select to pin the chat window that user mostly chat with, 
+            and the user can also check the reservation message that has yet to be sent(change some). 
+            Additional functions on this page are group chat, group call, and group video call.
+        </p>
+        <div class="img-box">
+            <img src="../img/root/message page.jpg" alt="detail-img">
+        </div>
+
+        <span class="explain__subtitle">Memory Page</span>
+        <p>
+            The third page, memory, is designed to allow families to share their week with family members 
+            based on photos. Photos of family members are collected by day of the week and shown on the feed, 
+            and families can communicate with like and comment. The third screen is an upload screen, 
+            and the days of the week were indicated based on the access date and configured as an intuitive and efficient interface.
+        </p>
+        <div class="img-box">
+            <img src="../img/root/memory page.jpg" alt="detail-img">
+        </div>
+
+        <span class="explain__subtitle">Profile Page</span>
+        <p>
+            The last page is a profile page where users can manage their profile and 
+            notification or language preferences. In the Edit profile, the user can modify 
+            or update personal information such as the user's profile picture, name, and area of residence.  
+        </p>
+        <div class="img-box">
+            <img src="../img/root/profile page.jpg" alt="detail-img">
+        </div>
+
+
+
+
+        <h3 class="explain__title">User Study Plan</h3>
+        <p>
+            Our primary purpose of our usability testing was to validate and refine the user performance of our ROOT’s application based on the experiences of users who already have and communicate with their families abroad. 
+            Our team has been chosen think aloud and user interview with feedback method for our user study. We participated in this study with six participants with families living abroad. 
+
+            Martin and Marie, who contacted their families in Korea from Vancouver, conducted a user study in-person.
+
+            Kim and Jeon, who reached their families in Vancouver from Korea, and Janice and Zihan, who contacted their families in China from Canada, participated in a video call. 
+        </p>
+        <div class="img-box">
+            <img src="../img/root/user study plan.jpg" alt="detail-img">
+        </div>
+
+        <h3 class="explain__title">Procedure</h3>
+        <p>
+            Our user study are divided into four procedures. 
+
+            First, introduction. Participants were introduced to brief information about what and for who our ROOT application was designed. 
+
+            Second, Pre-test interview. Participants were interviewed to gather further background information on how they currently connect with their families abroad.
+
+            Third, Testing Tasks. Participants received either a link or a device with our Protopie prototype. By going through the usability task list we created prior, participants were asked various tasks to complete.
+
+            Lastly, Post-Test Interview. After the usability test, participants were asked post-interview questions to gather their overall feedback about our application.
+        </p>
+        <div class="img-box">
+            <img src="../img/root/two procedure.jpg" alt="detail-img">
+        </div>
+
+        <h3 class="explain__title">Design Issues</h3>
+        <p>
+            The first design issue we found from the user study was that the message page was 
+            lacking clear indication for users to create new family group chats. In addition, 
+            some users pointed out that they were confused by the different design layout of the 
+            group chats and single member chats as it wasn’t consistent.
+            Second issue was when users were creating a new message, although many of our users had an 
+            overall straightforward proccess of sending a scheduled message, we found that they weren’t 
+            utilizing the microphone or the customize icon for selecting time as it had poor visibility 
+            and didn’t clearly indicate it’s usage.
+        </p>
+        <p>
+            Third issue was the calendar icon on each of user’s week as the icon didn’t have a specific 
+            purpose to the page some users were confused as to why it was not interactive.
+        </p>
+        <p>
+            The last issue was that the sharing memory page was lacking clear indicators for each various 
+            steps they had to take in order to successfully upload images to their week. 
+        </p>
+        <div class="img-box">
+            <img src="../img/root/Design Issues.jpg" alt="detail-img">
+        </div>
+
+        <h3 class="explain__title">Improvement</h3>
+
+        <span class="explain__subtitle">Improvement 1</span>
+
+        <p>
+            To improve our first issue of the memory page, we plan to redesign the chat layouts 
+            to keep the page of different chats consistent and also clearly indicate the option 
+            for them to create new group chats on the top screen where they can select memebers 
+            and create the group chat names accordingly.
+        </p>
+        <div class="img-box">
+            <img src="../img/root/improvement1.jpg" alt="detail-img">
+        </div>
+
+        <span class="explain__subtitle">Improvement 2</span>
+        <p>
+            To improve the interaction of sending messages, we want to redesign it into a 
+            step-by-step learning path for our users.  It will also display the current local 
+            time of the member they want to send to and the user can choose the time of the 
+            scheduled message, we also added the option for the user to "customize time", 
+            which will make it easier for the user to choose the right time they wish.
+        </p>
+        <div class="img-box">
+            <img src="../img/root/improvement2.jpg" alt="detail-img">
+        </div>
+
+        <span class="explain__subtitle">Improvement 3</span>
+        <p>
+            To improve our memory page, we plan to change the previous calendar icons to family 
+            members' profile images to make it easier to identify and clarify for users.
+            To improve the interaction of users uploading their memories, we want to include 
+            clear subheadings that instruct users to upload their videos or images.
+        </p>
+        <div class="img-box">
+            <img src="../img/root/improvement3.jpg" alt="detail-img">
+        </div>
+          
+
+        <h3 class="explain__title">Our Observation</h3>
+        <p>
+            From testing our prototype over a video connection, we observed that it was harder to 
+            communicate our prototype to our participants than the study done in person. 
+
+            Especially with seniors, it was more challenging to show and explain the interface over 
+            the video call directly compared to our younger participants, who were familiar with 
+            applications like Discord and screen sharing.
+        </p>
+
+    </section>
+
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer">
+            <div class="footer__container container">
+                <h1 class="footer__title">Miji</h1>
+                <p>Frontend Developer</p>
+                <p>UI/UX Designer</p>
+
+                <ul class="footer__list">
+                    <li>
+                        <a href="#home" class="footer__link">Home</a>
+                    </li>
+                    <li>
+                        <a href="#skills" class="footer__link">Skills</a>
+                    </li>
+                    <li>
+                        <a href="#projects" class="footer__link">Projects</a>
+                    </li>
+                </ul>
+
+                <ul class="footer__social">
+                    <a href="https://www.linkedin.com/in/mijikim0105" target="_blank" class="footer__social-link">
+                        <i class="ri-linkedin-box-line"></i>
+                    </a>
+
+                    <a href="https://github.com/iimiji" target="_blank" class="footer__social-link">
+                        <i class="ri-github-line"></i>
+                    </a>
+
+                    <a href="https://www.youtube.com/@galleryme2147" target="_blank" class="footer__social-link">
+                        <i class="ri-youtube-line"></i>
+                    </a>
+                    <a href="https://drive.google.com/drive/u/0/folders/1HiOxrfiWZSnz7Uhui4wfj7Bo7Zz8NDt2" target="_blank" class="footer__social-link">
+                        <i class="ri-attachment-2"></i>                            
+                    </a>
+                </ul>
+
+                <span class="footer__copy">
+                    &#169; Copyright Miji Kim. All rights reserved
+                </span>
+            </div>
+        </footer>
+
+
+        <!--========== SCROLL UP ==========-->
+        <a href="#" class="scrollup" id="scroll-up"> 
+            <i class="ri-arrow-up-line"></i>
+        </a>
+
+        <!--=============== SCROLLREVEAL ===============-->
+        <script src="../js/scrollreveal.min.js"></script>
+
+        <!--=============== SWIPER JS ===============-->
+        <script src="../js/swiper-bundle.min.js"></script>
+        
+        <!--=============== MAIN JS ===============-->
+        <script src="../js/main.js"></script>
+    </body>
+</html>
