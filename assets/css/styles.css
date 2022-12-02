@@ -11,7 +11,7 @@
   --title-color: hsl(207, 4%, 16%);
   --text-color: hsl(207, 4%, 28%);
   --text-color-light: hsl(207, 4%, 56%);
-  --body-color: hsl(207, 4%, 99%);
+  --body-color: hsl(0, 0%, 100%);
   --container-color: hsl(207, 4%, 95%);
   --blob-color: rgba(63, 35, 55, 0.501);
   /* Change the first number */
@@ -94,8 +94,11 @@ a {
 img {
   max-width: 100%;
   height: auto;
+  transition: transform .4s;
 }
-
+img:hover {
+  transform: scale(1.05);
+}
 /*=============== THEME ===============*/
 .nav__buttons {
   display: flex;
