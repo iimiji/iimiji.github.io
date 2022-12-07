@@ -1724,6 +1724,9 @@ body {
 .explain-img-mobile {
   display: none;
 }
+.projectpc {
+  display: block;
+}
 @media (max-width: 800px){
   img:hover {
     transform: scale(1.05);
@@ -1740,6 +1743,9 @@ body {
   
   .explain-img-mobile {
     display: block;
+  }
+  .projectpc {
+    display: none;
   }
 }
 /*
