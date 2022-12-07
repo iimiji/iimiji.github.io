@@ -10,7 +10,7 @@
   --first-color: hsl(316, 34%, 34%);
   --title-color: hsl(207, 4%, 16%);
   --text-color: hsl(207, 4%, 28%);
-  --text-color-light: hsl(207, 4%, 56%);
+  --text-color-light: #8a8f93;
   --body-color: hsl(0, 0%, 100%);
   --container-color: hsl(207, 4%, 95%);
   --blob-color: rgba(63, 35, 55, 0.501);
@@ -99,6 +99,12 @@ img {
 img:hover {
   transform: scale(1.05);
 }
+img:active {
+  transform: scale(1.3);
+}
+img:focus {
+  transform: scale(1.3);
+}
 /*=============== THEME ===============*/
 .nav__buttons {
   display: flex;
@@ -137,17 +143,10 @@ body.dark-theme {
   transition: background .4s; /* For dark mode animation */
 }
 .dark-theme .nav__logo {
-  opacity: 0;
+  filter: invert(100%);
   transition: background .4s; /* For dark mode animation */
 }
-.nav__logo_white {
-  opacity: 0;
-  transition: background .4s; /* For dark mode animation */
-}
-.dark-theme .nav__logo_white {
-  opacity: 1;
-  transition: background .4s; /* For dark mode animation */
-}
+
 
 .dark-theme .home__shape-wawes,
 .dark-theme .home__shape-circle,
@@ -325,7 +324,7 @@ body.dark-theme {
   justify-self: center;
   display: flex;
   column-gap: 1.25rem;
-  margin-bottom: 18%;
+  margin-bottom: 5rem;
 }
 
 .home__social-link {
@@ -408,6 +407,7 @@ body.dark-theme {
   row-gap: 1rem;
 }
 
+
 .about__info-title {
   font-family: var(--body-font);
   font-size: var(--smaller-font-size);
@@ -420,6 +420,8 @@ body.dark-theme {
 .about__info-number {
   font-family: var(--title-font);
   color: var(--title-color);
+  margin-bottom: 1rem;
+
 }
 
 .about__info-description {
@@ -793,7 +795,6 @@ body.dark-theme {
   left: 1.5rem;
 }
 
-
 .overlay {
   position: fixed;
   top: 0;
@@ -805,13 +806,14 @@ body.dark-theme {
   visibility: hidden;
   opacity: 0;
 }
+
 .overlay:target {
   visibility: visible;
   opacity: 1;
 }
 
 .popup {
-  
+  z-index: 0;
   margin: 20rem auto;
   padding: 20px;
   background: #fff;
@@ -962,12 +964,11 @@ body.dark-theme {
   bottom: -30%;
   background-color: var(--body-color);
   box-shadow: 0 4px 12px hsla(207, 24%, 35%, .15);
-  display: inline-flex;
   padding: .35rem;
   border-radius: .25rem;
   font-size: 1.1rem;
   color: var(--title-color);
-  z-index: var(--z-tooltip);
+  z-index: 10;
   transition: bottom .3s, transform .3s;
 }
 
@@ -1401,6 +1402,7 @@ body.dark-theme {
   color: rgb(255, 255, 255);
   opacity: 80%;
   transition: .2s; 
+  margin-bottom: 0.6rem;
 }
 .root-text a:hover{
   opacity: 100%;
@@ -1485,8 +1487,8 @@ body.dark-theme {
 .explain__title {
   font-size: var(--h1-font-size);
   font-weight: var(--font-semi-bold);
-  margin-bottom: 1rem;
-  margin-top: 1.6rem;
+  margin-bottom: 2rem;
+  margin-top: 3rem;
 }
 
 .explain__subtitle {
@@ -1504,8 +1506,8 @@ body.dark-theme {
 }
 .img-box{
 	display: block;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
   margin-left: auto;
   margin-right: auto;
 	position: relative;
@@ -1520,10 +1522,200 @@ body.dark-theme {
 }
 
 
+/*Scroll down arrow*/
 
+body {
+	margin: 0;
+/* 	background-color: #8FB4F1; */
+}
+.spinner {
+/*     background: url(data:image/png;base64,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) no-repeat center; */
+    display: block;
+    margin: 5% auto;
+    position: relative;
+    width: 159px;
+    height: 59px;
+}
+@-webkit-keyframes pulse {
+ 0% {
+ opacity: 0;
+ background-position: center top;
+ -moz-background-size: 0 auto;
+ -o-background-size: 0 auto;
+ -webkit-background-size: 0 auto;
+ background-size: 0 auto;
+}
+ 10% {
+ opacity: 0;
+}
+ 50% {
+ opacity: 1;
+ -moz-background-size: 20% auto;
+ -o-background-size: 20% auto;
+ -webkit-background-size: 20% auto;
+ background-size: 20% auto;
+}
+ 90% {
+ opacity: 0;
+}
+ 100% {
+ opacity: 0;
+ background-position: center bottom;
+ -moz-background-size: 0 auto;
+ -o-background-size: 0 auto;
+ -webkit-background-size: 0 auto;
+ background-size: 0 auto;
+}
+}
+ @-moz-keyframes pulse {
+ 0% {
+ opacity: 0;
+ background-position: center top;
+ -moz-background-size: 0 auto;
+ -o-background-size: 0 auto;
+ -webkit-background-size: 0 auto;
+ background-size: 0 auto;
+}
+ 10% {
+ opacity: 0;
+}
+ 50% {
+ opacity: 1;
+ -moz-background-size: 20% auto;
+ -o-background-size: 20% auto;
+ -webkit-background-size: 20% auto;
+ background-size: 20% auto;
+}
+ 90% {
+ opacity: 0;
+}
+ 100% {
+ opacity: 0;
+ background-position: center bottom;
+ -moz-background-size: 0 auto;
+ -o-background-size: 0 auto;
+ -webkit-background-size: 0 auto;
+ background-size: 0 auto;
+}
+}
+ @-ms-keyframes pulse {
+ 0% {
+ opacity: 0;
+ background-position: center top;
+ -moz-background-size: 0 auto;
+ -o-background-size: 0 auto;
+ -webkit-background-size: 0 auto;
+ background-size: 0 auto;
+}
+ 10% {
+ opacity: 0;
+}
+ 50% {
+ opacity: 1;
+ -moz-background-size: 20% auto;
+ -o-background-size: 20% auto;
+ -webkit-background-size: 20% auto;
+ background-size: 20% auto;
+}
+ 90% {
+ opacity: 0;
+}
+ 100% {
+ opacity: 0;
+ background-position: center bottom;
+ -moz-background-size: 0 auto;
+ -o-background-size: 0 auto;
+ -webkit-background-size: 0 auto;
+ background-size: 0 auto;
+}
+}
+ @keyframes pulse {
+ 0% {
+ opacity: 0;
+ background-position: center top;
+ -moz-background-size: 0 auto;
+ -o-background-size: 0 auto;
+ -webkit-background-size: 0 auto;
+ background-size: 0 auto;
+}
+ 10% {
+ opacity: 0;
+}
+ 50% {
+ opacity: 1;
+ -moz-background-size: 20% auto;
+ -o-background-size: 20% auto;
+ -webkit-background-size: 20% auto;
+ background-size: 20% auto;
+}
+ 90% {
+ opacity: 0;
+}
+ 100% {
+ opacity: 0;
+ background-position: center bottom;
+ -moz-background-size: 0 auto;
+ -o-background-size: 0 auto;
+ -webkit-background-size: 0 auto;
+ background-size: 0 auto;
+}
+}
+.scroll-down a {
+	display: block;
+	opacity: 0;
+	-moz-transition: all 0.4s ease;
+	-o-transition: all 0.4s ease;
+	-webkit-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+	line-height: 0;
+	font-size: 0;
+	color: transparent;
+	margin-left: auto;
+	margin-right: auto;
+	-moz-background-size: 0 auto;
+	-o-background-size: 0 auto;
+	-webkit-background-size: 0 auto;
+	background-size: 0 auto;
+	-webkit-animation: pulse 1.5s 0s infinite normal ease forwards;
+	-moz-animation: pulse 1.5s 0s infinite normal ease forwards;
+	-o-animation: pulse 1.5s 0s infinite normal ease forwards;
+	animation: pulse 1.5s 0s infinite normal ease forwards;
+	background-image: url(https://www.svgrepo.com/show/25789/down-arrow.svg);
+	background-repeat: no-repeat;
+}
+.scroll-down a:before, .scroll-down a:after {
+	content: " ";
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	width: 100%;
+	height: 100%;
+	background: url(../img/arrow.svg) no-repeat center top;
+	-moz-background-size: 100% auto;
+	-o-background-size: 100% auto;
+	-webkit-background-size: 100% auto;
+	background-size: 100% auto;
+}
 
+.scroll-down a:before {
+	-webkit-animation: pulse 1.5s 0.25s infinite normal ease forwards;
+	-moz-animation: pulse 1.5s 0.25s infinite normal ease forwards;
+	-o-animation: pulse 1.5s 0.25s infinite normal ease forwards;
+	animation: pulse 1.5s 0.25s infinite normal ease forwards;
+}
+.scroll-down a:after {
+	-webkit-animation: pulse 1.5s 0.5s infinite normal ease forwards;
+	-moz-animation: pulse 1.5s 0.5s infinite normal ease forwards;
+	-o-animation: pulse 1.5s 0.5s infinite normal ease forwards;
+	animation: pulse 1.5s 0.5s infinite normal ease forwards;
+}
 
-
+@media screen and (max-width: 1048px) {
+.spinner {
+  display: none;
+}
+}
 
 
 /*
@@ -1550,5 +1742,5 @@ https://dev.to/codewell/6-html-and-css-projects-for-your-portfolio-3kbh
 https://www.w3schools.com/css/css3_transitions.asp
 https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions
 https://css-tricks.com/almanac/properties/t/transition/
-
+https://codepen.io/dr_ph4nt0m/pen/VObmmK?html-preprocessor=pug
 */
