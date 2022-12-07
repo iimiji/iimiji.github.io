@@ -1717,7 +1717,31 @@ body {
 }
 }
 
+.explain-img-pc {
+  display: block;
+}
 
+.explain-img-mobile {
+  display: none;
+}
+@media (max-width: 800px){
+  img:hover {
+    transform: scale(1.05);
+  }
+  img:active {
+    transform: scale(1.05);
+  }
+  img:focus {
+    transform: scale(1.05);
+  }
+  .explain-img-pc {
+    display: none;
+  }
+  
+  .explain-img-mobile {
+    display: block;
+  }
+}
 /*
 REFERENCE
 
