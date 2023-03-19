@@ -1379,7 +1379,18 @@ body.dark-theme {
   margin-top: 3rem;
   text-align: center;
 }
-
+.airbrush{
+	min-height: 90vh;
+	width: 100%;
+	background: url(../img/airbrush/project5.jpg);
+	background-size: contain;
+	background-position: center top;
+	position: relative;
+	display: grid;
+	align-items: center;
+  margin-top: 3rem;
+  text-align: center;
+}
 .root-text h1{
 	font-size: var(--biggest-font-size);
   color: #fff;
