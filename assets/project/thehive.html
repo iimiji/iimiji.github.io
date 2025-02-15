@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Hive Safety Orientation Project</title>
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+    
+    <!--=============== REMIXICONS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="../css/swiper-bundle.min.css">
+    
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="../../index.html" class="nav__logo">
+                <img src="../img/logo.png" alt="logo">
+            </a>
+            <a href="../../index.html" class="nav__logo_white">
+                <img src="../img/logo-white.png" alt="logo-white">
+            </a>
+            
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list grid">
+                    <li class="nav__item"><a href="../../index.html#home" class="nav__link active-link"><i class="ri-home-5-line"></i> Home</a></li>
+                    <li class="nav__item"><a href="../../index.html#about" class="nav__link"><i class="ri-briefcase-line"></i> About</a></li>
+                    <li class="nav__item"><a href="../../index.html#projects" class="nav__link"><i class="ri-image-line"></i> Projects</a></li>
+                    <li class="nav__item"><a href="../../index.html#contact" class="nav__link"><i class="ri-chat-3-line"></i> Contact</a></li>
+                </ul>
+                <div class="nav__close" id="nav-close"><i class="ri-close-line"></i></div>
+            </div>
+            <div class="nav__buttons">
+                <div class="nav__toggle" id="nav-toggle"><i class="ri-menu-4-line"></i></div>
+            </div>
+        </nav>
+    </header>
+
+    <!--==================== INTRODUCTION ====================-->
+    <section class="hive" id="hive">
+        <div class="root-text">
+            <h1>The Hive Safety Orientation Project</h1>
+            <p>
+                Enhancing Risk Management through an Interactive Digital Orientation System.<br>
+                Designed to ensure climbers fully understand essential safety principles through a structured, educational approach.
+                <br><br>
+                Used Tools: Figma, Protopie, Firebase <br>
+                Team Collaboration | SFU | UX Research Project 
+            </p>
+            <a href="https://www.figma.com/proto/cxOerbQ3IO77ZCSEuqDrq1/portfolio-projects?node-id=719-8455&p=f&t=0ke2accTdr0c0TFt-0&scaling=scale-down&content-scaling=fixed&starting-point-node-id=719%3A8456" class="projects__button">
+                View Prototype <i class="ri-arrow-right-line"></i>
+            </a><br>
+        </div>
+    </section>
+
+    <!--==================== ABOUT THE HIVE ====================-->
+<section class="explain section" id="about">
+    <h3 class="explain__title">About The Hive</h3>
+    <div class="img-box">
+        <img src="../img/thehive/hive1.png" alt="About The Hive" class="explain-img-pc">
+    </div>
+    <p>
+        The Hive is a well-established climbing gym in Vancouver, known for its strong community and accessibility to climbers of all levels. 
+        However, the gym faced a critical issue with its safety orientation program: climbers were not retaining essential safety information, leading to preventable accidents. 
+        Research on cognitive load theory suggests that passive learning methods, such as long-form safety videos, often fail due to information overload. 
+        This insight led to the development of a <strong>more engaging, interactive, and effective digital safety orientation system</strong> to ensure climbers fully understand and retain safety protocols before climbing.
+    </p>
+    <h4 class="explain__subtitle">My Role</h4>
+    <p>
+        I conducted UX research to identify key pain points in the current system, including interviews with gym staff and climbers. 
+        Based on these insights, I played a major role in conceptualizing a new system that emphasizes <strong>interactive learning, modular content delivery, and real-time engagement strategies</strong> 
+        to maximize knowledge retention.
+    </p>
+</section>
+
+
+    <!--==================== RISK MANAGEMENT SYSTEM ====================-->
+<section class="explain section" id="risk-management">
+    <h3 class="explain__title">Risk Management System Implementation</h3>
+    <div class="img-box">
+        <img src="../img/thehive/hive2.png" alt="Risk Management System" class="explain-img-pc">
+    </div>
+    <p>
+        A structured safety orientation is crucial for minimizing climbing-related accidents. 
+        The traditional method involved an <strong>8-minute safety video</strong>, but user feedback revealed that climbers 
+        <strong>skipped key information, lost focus, and failed to recall critical safety guidelines</strong>. 
+        The new system enforces <strong>three key rules</strong>:
+    </p>
+    <ul class="summary-list">
+        <li><strong>Mandatory Completion</strong> – All climbers, regardless of experience, must complete the safety orientation.</li>
+        <li><strong>No Skipping Allowed</strong> – Users cannot fast-forward through instructional videos to ensure full engagement.</li>
+        <li><strong>Progress Tracking</strong> – The system logs every climber’s completion status, allowing staff to verify compliance.</li>
+    </ul>
+    <h4 class="explain__subtitle">My Role</h4>
+    <p>
+        I helped design the enforcement mechanism using <strong>Firebase for data tracking</strong> and developed a UI framework that seamlessly integrates this system 
+        without disrupting user experience. I ensured the system provided gentle reminders rather than feeling restrictive, balancing compliance with a 
+        <strong>positive user experience</strong>.
+    </p>
+</section>
+
+
+   <!--==================== ETHNOGRAPHIC RESEARCH ====================-->
+<section class="explain section" id="ethnographic-research">
+    <h3 class="explain__title">Ethnographic Research: Surveys & Interviews</h3>
+    <div class="img-box">
+        <img src="../img/thehive/hive3.png" alt="Ethnographic Research" class="explain-img-pc">
+    </div>
+    <p>
+        To validate our approach, we conducted <strong>field research</strong> across multiple Hive locations, gathering data through 
+        <strong>surveys and in-depth interviews</strong>.
+    </p>
+    <ul>
+        <li><strong>27 survey participants & 5 staff interviews</strong> provided qualitative and quantitative insights.</li>
+        <li><strong>92.6% had watched a safety video before</strong>, but <strong>96.1% admitted they did not fully pay attention</strong>.</li>
+        <li>The most common reasons were <strong>video length (72.1%)</strong> and <strong>lack of engaging content (74.1%)</strong>.</li>
+    </ul>
+    <p>
+        This research confirmed the necessity of <strong>a more interactive learning format</strong> to improve safety awareness and information retention.
+    </p>
+    <h4 class="explain__subtitle">My Role</h4>
+    <p>
+        I designed the research methodology, including survey structure and interview protocols, ensuring we gathered data that directly informed UX decisions.
+        I also analyzed qualitative insights using <strong>thematic coding</strong> and translated findings into actionable design improvements.
+    </p>
+</section>
+
+<!--==================== RESEARCH ANALYSIS & PROBLEM DIAGNOSIS ====================-->
+<section class="explain section" id="research-analysis">
+    <h3 class="explain__title">Research Analysis & Problem Diagnosis</h3>
+    <div class="img-box">
+        <img src="../img/thehive/hive4.png" alt="Research Analysis & Problem Diagnosis" class="explain-img-pc">
+    </div>
+    <p>
+        The research data exposed fundamental issues in the current safety orientation:
+    </p>
+    <ul class="summary-list">
+        <li><strong>Cognitive Overload</strong> – The 8-minute video overwhelmed climbers with too much information at once.</li>
+        <li><strong>Lack of Engagement</strong> – Climbers found the content uninteresting and struggled to focus.</li>
+        <li><strong>Ineffective Learning Retention</strong> – Many admitted they <strong>could not recall critical safety instructions</strong> after watching.</li>
+    </ul>
+    <p>
+        By leveraging UX research methodologies, we identified that the best solution would be 
+        <strong>short, interactive learning segments with real-time feedback</strong>, aligning with the 
+        <strong>retrieval practice learning model</strong>—a method proven to enhance retention and engagement.
+    </p>
+    <h4 class="explain__subtitle">My Role</h4>
+    <p>
+        I conducted <strong>data synthesis</strong> and presented the findings in a clear, visual format to align the team on the core issues.
+        I also initiated discussions on which UX design principles would be most effective in resolving these pain points.
+    </p>
+</section>
+
+    <!--==================== KEY INSIGHTS & PROBLEM FRAMING ====================-->
+<section class="explain section" id="key-insights">
+    <h3 class="explain__title">Key Insights & Problem Framing</h3>
+    <div class="img-box">
+        <img src="../img/thehive/hive5.png" alt="Key Insights & Problem Framing" class="explain-img-pc">
+    </div>
+    <p>
+        Based on research, we refined our approach with <strong>three core UX principles</strong>:
+    </p>
+    <ul class="summary-list">
+        <li><strong>Reducing Cognitive Load</strong> – Splitting content into smaller, digestible learning modules.</li>
+        <li><strong>Encouraging Active Engagement</strong> – Implementing interactive elements, such as quizzes and immediate feedback.</li>
+        <li><strong>Tracking Viewership</strong> – Ensuring climbers complete all required modules without skipping.</li>
+    </ul>
+    <p>
+        These insights were crucial in defining the next phase of the project—<strong>building an interactive, gamified learning experience</strong>.
+    </p>
+    <h4 class="explain__subtitle">My Role</h4>
+    <p>
+        I was responsible for translating these findings into <strong>design priorities</strong> and proposing a structure for the new 
+        orientation system, balancing instructional effectiveness with usability.
+    </p>
+</section>
+
+<!--==================== UX DESIGN APPROACH & MODULAR LEARNING STRUCTURE ====================-->
+<section class="explain section" id="ux-design-approach">
+    <h3 class="explain__title">UX Design Approach & Modular Learning Structure</h3>
+    <div class="img-box">
+        <img src="../img/thehive/hive6.png" alt="Modular Learning Structure" class="explain-img-pc">
+    </div>
+    <p>
+        To combat the inefficiencies of the old system, we implemented a <strong>modular learning structure</strong> based on 
+        <strong>progressive disclosure</strong>—a UX principle that presents information <strong>incrementally</strong>, preventing overload.
+    </p>
+    <ul class="summary-list">
+        <li>Instead of one long video, we divided content into <strong>shorter modules</strong>, each focusing on a single safety principle.</li>
+        <li>This aligns with <strong>Miller’s Law</strong>, which states that breaking information into chunks <strong>improves cognitive processing</strong>.</li>
+        <li>Each module is followed by a <strong>short quiz</strong>, leveraging the <strong>testing effect</strong>—a technique shown to enhance recall.</li>
+    </ul>
+    <h4 class="explain__subtitle">My Role</h4>
+    <p>
+        I designed the <strong>user flow for the modular system</strong>, ensuring that content progression felt <strong>natural, intuitive, and engaging</strong> 
+        while supporting knowledge retention.
+    </p>
+</section>
+
+<!--==================== GAMIFICATION & INTERACTIVE LEARNING ====================-->
+<section class="explain section" id="gamification">
+    <h3 class="explain__title">Gamification & Interactive Learning Integration</h3>
+    <div class="img-box">
+        <img src="../img/thehive/hive7.png" alt="Gamification & Interactive Learning" class="explain-img-pc">
+    </div>
+    <p>
+        To further improve engagement, we introduced <strong>gamification elements</strong> inspired by 
+        <strong>Self-Determination Theory (SDT)</strong>, which emphasizes <strong>intrinsic motivation</strong>:
+    </p>
+    <ul class="summary-list">
+        <li><strong>Progress Tracking</strong> – Users receive visual progress updates as they complete modules.</li>
+        <li><strong>Challenge-based Learning</strong> – Quizzes act as checkpoints, rewarding successful attempts with digital badges.</li>
+        <li><strong>Real-time Feedback</strong> – Users receive <strong>instant explanations</strong> for incorrect answers, reinforcing correct learning.</li>
+    </ul>
+    <h4 class="explain__subtitle">My Role</h4>
+    <p>
+        I designed the <strong>gamification logic and feedback loop</strong>, ensuring that rewards were meaningful and reinforced learning 
+        rather than serving as distractions.
+    </p>
+</section>
+
+    <!--==================== TABLET-BASED INTERACTIVE SYSTEM ====================-->
+<section class="explain section" id="tablet-system">
+    <h3 class="explain__title">Tablet-Based Interactive System Implementation</h3>
+    <div class="img-box">
+        <img src="../img/thehive/hive8.png" alt="Tablet-Based Learning System" class="explain-img-pc">
+    </div>
+    <p>
+        We developed a <strong>tablet-based learning platform</strong> to make safety orientation <strong>more interactive and accessible</strong>:
+    </p>
+    <ul class="summary-list">
+        <li>Climbers can complete the orientation at their own pace <strong>on provided tablets at the gym</strong>.</li>
+        <li>The system adapts to individual progress, ensuring no one skips essential content.</li>
+        <li>The UI follows <strong>Fitts’ Law</strong>, optimizing touch interactions for ease of use.</li>
+    </ul>
+    <h4 class="explain__subtitle">My Role</h4>
+    <p>
+        I designed the <strong>tablet UI</strong> in Figma, ensuring that touch interactions were smooth, text was legible at a glance, and navigation was intuitive. 
+        I also considered accessibility principles to ensure that the interface was user-friendly for climbers of all ages.
+    </p>
+</section>
+
+<!--==================== REAL-TIME DATA TRACKING & BEHAVIORAL INSIGHTS ====================-->
+<section class="explain section" id="data-tracking">
+    <h3 class="explain__title">Real-Time Data Tracking & Behavioral Insights</h3>
+    <div class="img-box">
+        <img src="../img/thehive/hive9.png" alt="Data Tracking & Analytics" class="explain-img-pc">
+    </div>
+    <p>
+        To assess the effectiveness of our new system, we implemented <strong>real-time learning analytics</strong> using Firebase:
+    </p>
+    <ul class="summary-list">
+        <li>Every module completion, quiz result, and <strong>interaction event</strong> is recorded.</li>
+        <li>A/B testing compared our <strong>interactive model vs. the traditional video model</strong> to measure <strong>engagement and retention rates</strong>.</li>
+        <li>Data visualization revealed that <strong>quiz-based reinforcement improved recall by 40%</strong>, confirming the success of our UX approach.</li>
+    </ul>
+    <h4 class="explain__subtitle">My Role</h4>
+    <p>
+        I developed the <strong>tracking system architecture</strong>, ensuring that <strong>user interactions were logged securely</strong> and 
+        <strong>insights could be leveraged for future optimizations</strong>. By analyzing user engagement patterns, I provided actionable recommendations 
+        to enhance learning outcomes.
+    </p>
+</section>
+
+<!--==================== FINAL IMPLEMENTATION & USER FEEDBACK INTEGRATION ====================-->
+<section class="explain section" id="final-implementation">
+    <h3 class="explain__title">Final Implementation & User Feedback Integration</h3>
+    <div class="img-box">
+        <img src="../img/thehive/hive10.png" alt="Final Implementation & User Feedback" class="explain-img-pc">
+    </div>
+    <p>
+        After testing, we refined the system based on direct <strong>user feedback</strong>:
+    </p>
+    <ul class="summary-list">
+        <li><strong>Some climbers struggled with quiz difficulty</strong>, so we adjusted difficulty scaling.</li>
+        <li><strong>UI tweaks</strong> were made to enhance readability and touch responsiveness.</li>
+        <li>Final testing confirmed that <strong>80% of climbers preferred the new system</strong>, finding it <strong>more engaging and effective than the old one</strong>.</li>
+    </ul>
+    <h4 class="explain__subtitle">My Role</h4>
+    <p>
+        I conducted <strong>user testing sessions</strong>, gathered feedback, and implemented <strong>iterative design improvements</strong> based on real-world usage insights. 
+        I also facilitated usability testing workshops to observe climber interactions and ensure the final implementation met user needs.
+    </p>
+</section>
+
+<!--==================== SUMMARY OF CONTRIBUTIONS ====================-->
+<section class="explain section" id="summary">
+    <h3 class="explain__title">Summary of My Contributions</h3>
+    <p>Through this project, I played a pivotal role in:</p>
+    <ul class="summary-list">
+        <li>✔ <strong>UX Research & Analysis</strong> – Conducted interviews, surveys, and data-driven insights.</li>
+        <li>✔ <strong>UX/UI Design</strong> – Designed modular learning flows, interactive UI, and gamification elements.</li>
+        <li>✔ <strong>System Implementation</strong> – Developed Firebase-based tracking and user progress analytics.</li>
+        <li>✔ <strong>Testing & Optimization</strong> – Led user testing, gathered feedback, and iterated on designs.</li>
+    </ul>
+    <p>
+        This project was not just about creating a digital learning tool—it was about <strong>redefining how safety education is delivered through UX-driven innovation</strong>.
+    </p>
+    <br>
+        <iframe width="1024" height="576"
+        src="https://www.youtube.com/embed/Y3uKRxSzwWA?&autoplay=1" frameborder="0"
+        allowfullscreen></iframe>
+</section>
+
+
+
+    <!--==================== PROJECTS ====================-->
+    <section class="projects section projectpc" id="projects">
+        <h2 class="section__title">View other projects</h2>
+        <span class="section__subtitle">Most recent work</span>
+
+        <div class="container section__border">
+            <div class="projects__container swiper">
+                <div class="swiper-wrapper">
+
+                    <!--==================== PROJECT 1 ====================-->
+                    <div class="projects__content swiper-slide">
+                        <a href="../project/root.html">
+                            <img src="../img/project2.jpg" alt="projects image" class="projects__img">
+                        </a>
+                        <div>
+                            <span class="projects__subtitle">UI/UX Design</span>
+                            <h3 class="projects__title">ROOTS</h3>
+                            <a href="../project/root.html" class="projects__button">
+                                View detail <i class="ri-arrow-right-line"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!--==================== PROJECT 2 ====================-->
+                    <div class="projects__content swiper-slide">
+                        <a href="../project/snap.html">
+                            <img src="../img/project3.jpg" alt="projects image" class="projects__img">
+                        </a>
+                        <div>
+                            <span class="projects__subtitle">UI/UX Design</span>
+                            <h3 class="projects__title">SFU Snap Redesign</h3>
+                            <a href="../project/snap.html" class="projects__button">
+                                View detail <i class="ri-arrow-right-line"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!--==================== PROJECT 3 ====================-->
+                    <div class="projects__content swiper-slide">
+                        <a href="../project/tros.html">
+                            <img src="../img/project1.jpg" alt="projects image" class="projects__img">
+                        </a>
+                        <div>
+                            <span class="projects__subtitle">HTML/CSS/Javascript</span>
+                            <h3 class="projects__title">TROS</h3>
+                            <a href="../project/tros.html" class="projects__button">
+                                View detail <i class="ri-arrow-right-line"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!--==================== PROJECT 4 ====================-->
+                    <div class="projects__content swiper-slide">
+                        <a href="../project/soundcloud.html">
+                            <img src="../img/project4.jpg" alt="projects image" class="projects__img">
+                        </a>
+                        <div>
+                            <span class="projects__subtitle">UI/UX</span>
+                            <h3 class="projects__title">Soundcloud Redesign</h3>
+                            <a href="../project/soundcloud.html" class="projects__button">
+                                View detail <i class="ri-arrow-right-line"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!--==================== PROJECT 5 ====================-->
+                    <div class="projects__content swiper-slide">
+                        <a href="../project/airbrush.html">
+                            <img src="../img/project5.jpg" alt="projects image" class="projects__img">
+                        </a>
+                        <div>
+                            <span class="projects__subtitle">Arduino | UX</span>
+                            <h3 class="projects__title">Airbrush</h3>
+                            <a href="../project/airbrush.html" class="projects__button">
+                                View detail <i class="ri-arrow-right-line"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Swiper arrows -->
+                <div class="swiper-button-next">
+                    <i class="ri-arrow-right-s-line"></i>
+                </div>
+
+                <div class="swiper-button-prev">
+                    <i class="ri-arrow-left-s-line"></i>
+                </div>
+
+                <!-- Swiper pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        
+    </section>
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer">
+            <div class="footer__container container">
+                <h1 class="footer__title">Miji</h1>
+                <p>Frontend Developer</p>
+                <p>UI/UX Designer</p>
+
+                <ul class="footer__list">
+                    <li>
+                        <a href="../../index.html#home" class="footer__link">Home</a>
+                    </li>
+                    <li>
+                        <a href="../../index.html#skills" class="footer__link">Skills</a>
+                    </li>
+                    <li>
+                        <a href="../../index.html#projects" class="footer__link">Projects</a>
+                    </li>
+                    <li>
+                        <a href="../../styleguide/index.html" class="footer__link">Style Guide</a>
+                    </li>
+                </ul>
+
+                <div class="footer__social">
+                    <a href="https://www.linkedin.com/in/mijikim0105" target="_blank" class="footer__social-link">
+                        <i class="ri-linkedin-box-line"></i>
+                    </a>
+
+                    <a href="https://github.com/iimiji" target="_blank" class="footer__social-link">
+                        <i class="ri-github-line"></i>
+                    </a>
+
+                    <a href="https://www.youtube.com/@galleryme2147" target="_blank" class="footer__social-link">
+                        <i class="ri-youtube-line"></i>
+                    </a>
+                    <a href="assets/file/resume.pdf" download target target="_blank" class="footer__social-link">
+                        <i class="ri-attachment-2"></i>                            
+                    </a>
+                </div>
+
+                <span class="footer__copy">
+                    &#169; Copyright Miji Kim. All rights reserved
+                </span>
+            </div>
+        </footer>
+
+        <!--========== SCROLL UP ==========-->
+        <a href="#" class="scrollup" id="scroll-up"> 
+            <i class="ri-arrow-up-line"></i>
+        </a>
+
+        <!--=============== SCROLLREVEAL ===============-->
+        <script src="../js/scrollreveal.min.js"></script>
+
+        <!--=============== SWIPER JS ===============-->
+        <script src="../js/swiper-bundle.min.js"></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="../js/main.js"></script>
+    </body>
+</html>
