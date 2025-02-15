@@ -1379,6 +1379,18 @@ body.dark-theme {
   margin-top: 3rem;
   text-align: center;
 }
+.pillpop{
+	min-height: 90vh;
+	width: 100%;
+	background: url(../img/pillpopimage.png);
+	background-size: contain;
+	background-position: center top;
+	position: relative;
+	display: grid;
+	align-items: center;
+  margin-top: 3rem;
+  text-align: center;
+}
 .soundcloud{
 	min-height: 90vh;
 	width: 100%;

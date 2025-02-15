@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+
+        <!--=============== REMIXICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+        
+        <!--=============== SWIPER CSS ===============-->
+        <link rel="stylesheet" href="../css/swiper-bundle.min.css">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="../css/styles.css">
+
+        <title>Portfolio website Miji</title>
+    </head>
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="../../index.html" class="nav__logo">
+                    <img src="../img/logo.png" alt="logo">
+                </a>
+                <a href="../../index.html" class="nav__logo_white">
+                    <img src="../img/logo-white.png" alt="logo-white">
+                </a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list grid">
+                        <li class="nav__item">
+                            <a href="../../index.html#home" class="nav__link active-link">
+                                <i class="ri-home-5-line"></i> Home
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="../../index.html#about" class="nav__link">
+                                <i class="ri-briefcase-line"></i> About
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="../../index.html#skills" class="nav__link">
+                                <i class="ri-trophy-line"></i> Skills
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="../../index.html#qualification" class="nav__link">
+                                <i class="ri-book-open-line"></i> Qualification
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="../../index.html#projects" class="nav__link">
+                                <i class="ri-image-line"></i> Projects
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="../../index.html#contact" class="nav__link">
+                                <i class="ri-chat-3-line"></i> Contact
+                            </a>
+                        </li>
+                    </ul>
+
+                    <!-- Close button -->
+                    <div class="nav__close" id="nav-close">
+                        <i class="ri-close-line"></i>
+                    </div>
+                </div>
+
+                <div class="nav__buttons">
+                    <!-- Toggle button -->
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="ri-menu-4-line"></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+    <!--==================== PROJECT INTRODUCTION ====================-->
+    <section class="pillpop" id="pillpop">
+        <div class="root-text">
+            <h1>Pillpop</h1>
+            <p>
+                A Smart Medication Management App. Designed to enhance medication adherence through real-time tracking, personalized reminders, and an intuitive UI. 
+                <br><br>
+                <strong>Tools Used:</strong> React Native, Firebase, Expo, Google Maps API, AsyncStorage, Figma <br>
+                <strong>Role:</strong> UX/UI Design, Full-Stack Development, Deployment
+            </p>
+            <a href="https://github.com/iimiji/PillpopApp.git" class="projects__button">
+                View Code <i class="ri-arrow-right-line"></i>
+            </a><br
+        </div>
+    </section>
+
+    <!--==================== PROJECT OVERVIEW ====================-->
+<section class="explain section" id="pillpop-overview">
+    <h3 class="explain__title">Project Overview</h3>
+    <p>
+        <strong>Pillpop</strong> is a mobile application designed to assist users in managing their daily medication intake efficiently. 
+        The app integrates <strong>real-time tracking, personalized reminders, and an intuitive UI</strong> to enhance medication adherence. 
+        The project was entirely conceptualized, designed, and developed by <strong>Miji Kim</strong>, covering <strong>research, UI/UX design, development, and deployment</strong>.
+    </p>
+    <p>
+        This application was developed to address a crucial issue in healthcare: medication non-adherence. Many individuals, 
+        especially those managing chronic conditions, struggle to take their medications as prescribed. 
+        Pillpop provides a <strong>seamless, engaging, and effective</strong> way to help users maintain their medication schedules, 
+        ultimately contributing to better health outcomes.
+    </p>
+</section>
+
+<!--==================== ROLE & CONTRIBUTIONS ====================-->
+<section class="explain section" id="pillpop-role">
+    <h3 class="explain__title">Role & Contributions</h3>
+
+    <h4 class="explain__subtitle">Concept Development & Market Research</h4>
+    <p>
+        The project began with an in-depth analysis of existing medication management solutions. Through market research and competitor analysis, 
+        I identified gaps in user experience, such as <strong>complex navigation, lack of intuitive reminders, and insufficient tracking mechanisms</strong>. 
+        This research informed the core functionalities of Pillpop, ensuring that it provided a <strong>streamlined and effective</strong> solution for medication tracking.
+    </p>
+
+    <h4 class="explain__subtitle">UI/UX Design</h4>
+    <div class="img-box">
+        <img src="../img/pillpop/pop1.png" alt="Pillpop UI Design" class="explain-img-pc">
+    </div>
+    <div class="img-box">
+        <img src="../img/pillpop/pop2.png" alt="Pillpop UI Design" class="explain-img-pc">
+    </div>
+    <p>
+        Using <strong>Figma</strong>, I developed <strong>low-fidelity wireframes</strong> to outline the app’s core workflows and ensure a logical, user-friendly experience. 
+        High-fidelity prototypes were then created, focusing on <strong>minimalist aesthetics, ease of use, and accessibility</strong>. 
+        Design decisions were based on user feedback, ensuring an intuitive and visually appealing interface.
+    </p>
+
+    <h4 class="explain__subtitle">Full-Stack Development</h4>
+    <p>
+        I built the application using <strong>React Native</strong> for cross-platform support, ensuring smooth performance on both iOS and Android. 
+        Firebase Firestore was integrated to enable <strong>real-time medication tracking</strong>, while <strong>Google Maps API</strong> allowed users to locate nearby pharmacies. 
+        Additionally, <strong>AsyncStorage</strong> was used to store medication images locally, reducing dependency on cloud storage.
+    </p>
+
+    <h4 class="explain__subtitle">User Testing & Iteration</h4>
+    <p>
+        To refine the user experience, I conducted usability tests with potential users. Feedback revealed areas for improvement, such as 
+        <strong>simplifying medication entry, enhancing reminder alerts, and refining UI elements</strong>. 
+        These insights led to iterative updates, improving the app’s overall effectiveness.
+    </p>
+
+    <h4 class="explain__subtitle">Final Deployment & Documentation</h4>
+    <p>
+        After finalizing the core features, I documented the <strong>development process, API integrations, and design principles</strong> 
+        to facilitate future updates and potential scaling.
+    </p>
+</section>
+
+<!--==================== PROBLEM STATEMENT ====================-->
+<section class="explain section" id="pillpop-problem">
+    <h3 class="explain__title">Problem Statement</h3>
+    <p>
+        Medication non-adherence is a significant issue worldwide, with nearly <strong>50% of patients failing to take prescribed medications correctly</strong>. 
+        Many factors contribute to this, including forgetfulness, confusion over dosages, and lack of engaging tracking methods.
+    </p>
+
+    <h4 class="explain__subtitle">Key User Pain Points</h4>
+    <ul class="summary-list">
+        <li>Forgetting to take medications at the right time.</li>
+        <li>Difficulty in keeping track of multiple medications.</li>
+        <li>Lack of engaging and interactive feedback to encourage adherence.</li>
+        <li>Limited access to <strong>nearby pharmacies</strong> when prescriptions need refilling.</li>
+    </ul>
+
+    <h4 class="explain__subtitle">Market Research & Insights</h4>
+    <ul class="summary-list">
+        <li>The <strong>global digital health market</strong> is expanding rapidly, with an increasing demand for <strong>personalized healthcare solutions</strong>.</li>
+        <li>User surveys revealed that <strong>60% of respondents</strong> found existing medication apps too complex, leading to non-adherence.</li>
+        <li>Research indicated that <strong>audio and visual reminders</strong> significantly improve medication adherence rates.</li>
+    </ul>
+</section>
+
+<!--==================== SOLUTION & KEY FEATURES ====================-->
+<section class="explain section" id="pillpop-solution">
+    <h3 class="explain__title">Solution & Key Features</h3>
+    <p>
+        Pillpop was developed to address these challenges with a focus on <strong>simplicity, engagement, and effectiveness</strong>. 
+        The app provides users with an interactive way to track medications, set reminders, and find pharmacies easily.
+    </p>
+
+    <h4 class="explain__subtitle">1. Daily Medication Tracking</h4>
+    <div class="img-box">
+        <img src="../img/pillpop/pillpop3.png" alt="Daily Medication Tracking UI" class="explain-img-pc">
+    </div>
+    <ul class="summary-list">
+        <li>Users can <strong>add, edit, and delete medications</strong> effortlessly.</li>
+        <li>A <strong>progress tracker</strong> allows users to log medications as "taken," reinforcing adherence through a visual indicator.</li>
+        <li>The completion of daily medication triggers <strong>celebratory animations and sounds</strong> to positively reinforce behavior.</li>
+    </ul>
+
+    <h4 class="explain__subtitle">2. Smart Reminders & Audio Feedback</h4>
+    <div class="img-box">
+        <img src="../img/pillpop/pillpop6.png" alt="Gamification & Progress Tracking UI" class="explain-img-pc">
+    </div>
+    <ul class="summary-list">
+        <li>Customizable <strong>alarm notifications</strong> ensure users never miss a dose.</li>
+        <li>Audio reminders, implemented with <strong>Expo-av</strong>, provide an <strong>interactive experience</strong> to alert users effectively.</li>
+        <li>A <strong>blinking animation</strong> feature visually reinforces the importance of adherence.</li>
+    </ul>
+
+    <h4 class="explain__subtitle">3. Nearby Pharmacy Search</h4>
+    <div class="img-box">
+        <img src="../img/pillpop/pillpop2.png" alt="Nearby Pharmacy Search UI" class="explain-img-pc">
+    </div>
+    <ul class="summary-list">
+        <li>Using <strong>Google Maps API</strong>, the app enables users to <strong>find nearby pharmacies</strong> with ease.</li>
+        <li>Real-time location tracking ensures the most relevant search results, displaying distance and operating hours.</li>
+    </ul>
+
+    <h4 class="explain__subtitle">4. Medication Information Retrieval</h4>
+    <div class="img-box">
+        <img src="../img/pillpop/pillpop4.png" alt="Medication Search UI" class="explain-img-pc">
+    </div>
+    <ul class="summary-list">
+        <li>Integration with <strong>FDA’s API</strong> allows users to <strong>search for detailed medication information</strong> within the app.</li>
+        <li>This feature provides safety information and reduces the need for external research.</li>
+    </ul>
+
+    <h4 class="explain__subtitle">5. Local Storage for Medication Photos</h4>
+    <div class="img-box">
+        <img src="../img/pillpop/pillpop5.png" alt="Medication Photo Storage UI" class="explain-img-pc">
+    </div>
+    <ul class="summary-list">
+        <li>Users can <strong>capture and store images</strong> of their medications using the built-in camera functionality.</li>
+        <li><strong>AsyncStorage</strong> is utilized for local storage, reducing cloud costs while ensuring seamless access.</li>
+    </ul>
+
+    <h4 class="explain__subtitle">6. Interactive Progress & Gamification</h4>
+    <div class="img-box">
+        <img src="../img/pillpop/pillpop9.png" alt="Gamification & Progress Tracking UI" class="explain-img-pc">
+    </div>
+    <ul class="summary-list">
+        <li><strong>React Native Animated API</strong> is used to create dynamic progress tracking visuals.</li>
+        <li>This gamification approach enhances motivation, making medication adherence <strong>more engaging and rewarding</strong>.</li>
+    </ul>
+
+    <!--==================== MEDICAL NEWS FEED ====================-->
+    <h4 class="explain__subtitle">7. Medical News Feed</h4>
+    <div class="img-box">
+        <img src="../img/pillpop/pillpop7.png" alt="Medical News Feed UI" class="explain-img-pc">
+    </div>
+    <ul class="summary-list">
+        <li>Live medical news updates sourced via <strong>external health news API</strong>.</li>
+        <li>Users can browse trending articles related to healthcare and medication.</li>
+        <li>Clicking on articles opens the full content in an <strong>in-app browser</strong>, ensuring seamless access to relevant information.</li>
+    </ul>
+
+</section>
+
+<!--==================== CHALLENGES & SOLUTIONS ====================-->
+<section class="explain section" id="pillpop-challenges">
+    <h3 class="explain__title">Challenges & Solutions</h3>
+    <div class="challenges-list">
+        <div class="challenge-item">
+            <h4 class="challenge-title">High Firebase Storage Costs</h4>
+            <p class="challenge-solution">
+                Implemented <strong>local storage via AsyncStorage</strong> to minimize cloud dependency and reduce operational expenses.
+            </p>
+        </div>
+        <div class="challenge-item">
+            <h4 class="challenge-title">Slow API Response for Medication Searches</h4>
+            <p class="challenge-solution">
+                Optimized <strong>API response caching</strong> to ensure faster load times and improved data retrieval efficiency.
+            </p>
+        </div>
+        <div class="challenge-item">
+            <h4 class="challenge-title">Users Ignoring Notifications</h4>
+            <p class="challenge-solution">
+                Introduced <strong>audio reminders and animated alerts</strong> to capture attention and increase user engagement.
+            </p>
+        </div>
+        <div class="challenge-item">
+            <h4 class="challenge-title">Background Notifications Not Triggering</h4>
+            <p class="challenge-solution">
+                Integrated <strong>React Native Background Task API</strong> to ensure notifications are delivered reliably even when the app is running in the background.
+            </p>
+        </div>
+    </div>
+</section>
+
+
+<!--==================== FINAL OUTCOME ====================-->
+<section class="explain section" id="pillpop-outcome">
+    <h3 class="explain__title">Final Outcome</h3>
+    <ul class="summary-list">
+        <li>Successfully developed a <strong>fully functional</strong> cross-platform mobile application.</li>
+        <li>Improved <strong>medication adherence rates</strong> through <strong>interactive feedback and real-time tracking</strong>.</li>
+        <li>Integrated <strong>real-world APIs</strong> for <strong>pharmacy search</strong> and <strong>medication information retrieval</strong>.</li>
+        <li>Reduced Firebase costs with an <strong>optimized local storage solution</strong>.</li>
+        <li>Received <strong>positive user feedback</strong>, confirming the app’s ease of use and effectiveness.</li>
+    </ul>
+    <br>
+        <iframe width="1024" height="576"
+        src="https://www.youtube.com/embed/0-beiGcVAVc?&autoplay=1"frameborder="0"
+        allowfullscreen></iframe>
+</section>
+
+<!--==================== KEY TAKEAWAYS & REFLECTION ====================-->
+<section class="explain section" id="pillpop-reflection">
+    <h3 class="explain__title">Key Takeaways & Reflection</h3>
+    <p>
+        Developing Pillpop was an insightful journey that strengthened my expertise in 
+        <strong>UX/UI design, mobile development, and healthcare technology</strong>. 
+        Throughout the process, I tackled real-world challenges such as 
+        <strong>API integrations, optimizing local storage, and improving user engagement strategies</strong>.
+    </p>
+    <p>
+        By combining <strong>human-centered design, real-time tracking, and gamification</strong>, 
+        I was able to create a meaningful solution that enhances medication adherence. 
+        This project further solidified my passion for <strong>Human-Computer Interaction (HCI) 
+        and digital health innovations</strong>, and I look forward to exploring more ways 
+        technology can positively impact healthcare.
+    </p>
+    
+</section>
+
+    <!--==================== PROJECTS ====================-->
+    <section class="projects section projectpc" id="projects">
+        <h2 class="section__title">View other projects</h2>
+        <span class="section__subtitle">Most recent work</span>
+
+        <div class="container section__border">
+            <div class="projects__container swiper">
+                <div class="swiper-wrapper">
+
+                    <!--==================== PROJECT 1 ====================-->
+                    <div class="projects__content swiper-slide">
+                        <a href="../project/root.html">
+                            <img src="../img/project2.jpg" alt="projects image" class="projects__img">
+                        </a>
+                        <div>
+                            <span class="projects__subtitle">UI/UX Design</span>
+                            <h3 class="projects__title">ROOTS</h3>
+                            <a href="../project/root.html" class="projects__button">
+                                View detail <i class="ri-arrow-right-line"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!--==================== PROJECT 2 ====================-->
+                    <div class="projects__content swiper-slide">
+                        <a href="../project/snap.html">
+                            <img src="../img/project3.jpg" alt="projects image" class="projects__img">
+                        </a>
+                        <div>
+                            <span class="projects__subtitle">UI/UX Design</span>
+                            <h3 class="projects__title">SFU Snap Redesign</h3>
+                            <a href="../project/snap.html" class="projects__button">
+                                View detail <i class="ri-arrow-right-line"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!--==================== PROJECT 3 ====================-->
+                    <div class="projects__content swiper-slide">
+                        <a href="../project/tros.html">
+                            <img src="../img/project1.jpg" alt="projects image" class="projects__img">
+                        </a>
+                        <div>
+                            <span class="projects__subtitle">HTML/CSS/Javascript</span>
+                            <h3 class="projects__title">TROS</h3>
+                            <a href="../project/tros.html" class="projects__button">
+                                View detail <i class="ri-arrow-right-line"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!--==================== PROJECT 4 ====================-->
+                    <div class="projects__content swiper-slide">
+                        <a href="../project/soundcloud.html">
+                            <img src="../img/project4.jpg" alt="projects image" class="projects__img">
+                        </a>
+                        <div>
+                            <span class="projects__subtitle">UI/UX</span>
+                            <h3 class="projects__title">Soundcloud Redesign</h3>
+                            <a href="../project/soundcloud.html" class="projects__button">
+                                View detail <i class="ri-arrow-right-line"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!--==================== PROJECT 5 ====================-->
+                    <div class="projects__content swiper-slide">
+                        <a href="../project/airbrush.html">
+                            <img src="../img/project5.jpg" alt="projects image" class="projects__img">
+                        </a>
+                        <div>
+                            <span class="projects__subtitle">Arduino | UX</span>
+                            <h3 class="projects__title">Airbrush</h3>
+                            <a href="../project/airbrush.html" class="projects__button">
+                                View detail <i class="ri-arrow-right-line"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Swiper arrows -->
+                <div class="swiper-button-next">
+                    <i class="ri-arrow-right-s-line"></i>
+                </div>
+
+                <div class="swiper-button-prev">
+                    <i class="ri-arrow-left-s-line"></i>
+                </div>
+
+                <!-- Swiper pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        
+    </section>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+        <div class="footer__container container">
+            <h1 class="footer__title">Miji</h1>
+            <p>Frontend Developer</p>
+            <p>UI/UX Designer</p>
+
+            <ul class="footer__list">
+                <li>
+                    <a href="../../index.html#home" class="footer__link">Home</a>
+                </li>
+                <li>
+                    <a href="../../index.html#skills" class="footer__link">Skills</a>
+                </li>
+                <li>
+                    <a href="../../index.html#projects" class="footer__link">Projects</a>
+                </li>
+                <li>
+                    <a href="../../styleguide/index.html" class="footer__link">Style Guide</a>
+                </li>
+            </ul>
+
+            <div class="footer__social">
+                <a href="https://www.linkedin.com/in/mijikim0105" target="_blank" class="footer__social-link">
+                    <i class="ri-linkedin-box-line"></i>
+                </a>
+
+                <a href="https://github.com/iimiji" target="_blank" class="footer__social-link">
+                    <i class="ri-github-line"></i>
+                </a>
+
+                <a href="https://www.youtube.com/@galleryme2147" target="_blank" class="footer__social-link">
+                    <i class="ri-youtube-line"></i>
+                </a>
+                <a href="assets/file/resume.pdf" download target target="_blank" class="footer__social-link">
+                    <i class="ri-attachment-2"></i>                            
+                </a>
+            </div>
+
+            <span class="footer__copy">
+                &#169; Copyright Miji Kim. All rights reserved
+            </span>
+        </div>
+    </footer>
+
+    <!--========== SCROLL UP ==========-->
+    <a href="#" class="scrollup" id="scroll-up"> 
+        <i class="ri-arrow-up-line"></i>
+    </a>
+
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src="../js/scrollreveal.min.js"></script>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="../js/swiper-bundle.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="../js/main.js"></script>
+</body>
+</html>
