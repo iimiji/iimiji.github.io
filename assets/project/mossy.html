@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+
+    <!--=============== REMIXICONS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="../css/swiper-bundle.min.css">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="../css/styles.css">
+
+    <title>Mossy - AI Journaling App</title>
+</head>
+<body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="../../index.html" class="nav__logo">
+                <img src="../img/logo.png" alt="logo">
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list grid">
+                    <li class="nav__item">
+                        <a href="../../index.html#projects" class="nav__link active-link">
+                            <i class="ri-image-line"></i> Projects
+                        </a>
+                    </li>
+                </ul>
+
+                <!-- Close button -->
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!---- Mossy Project Introduction --->
+    <section class="root" id="root">
+        <div class="root-text">
+            <h1>Mossy</h1>
+            <p>
+                Mossy is an AI-powered journaling application designed to support emotional reflection and well-being. It enables users to log their daily thoughts, analyze emotions using AI, and visualize mood trends over time.
+                <br><br>
+                Tools: React Native, Firebase, AI Emotion Analysis <br>
+                Solo Graduation Project | SFU | IAT-499 
+            </p>
+            <a href="#" class="projects__button">
+                View Prototype <i class="ri-arrow-right-line"></i>
+            </a>
+        </div>
+    </section>
+
+    <!--==================== Explain ====================-->
+    <section class="explain section" id="explain">
+        <h3 class="explain__title">Background & Problem Statement</h3>
+        <p>
+            Many people struggle with understanding and expressing their emotions, which can impact mental well-being. Traditional journaling can be helpful, but it often lacks immediate feedback. Mossy aims to bridge this gap using AI-driven emotion analysis and interactive journaling experiences.
+        </p>
+        <div class="img-box">
+            <img src="../img/mossy/emotion-analysis.jpg" alt="emotion analysis" class="explain-img-pc">
+        </div>
+
+        <h3 class="explain__title">User Experience & Interaction</h3>
+        <p>
+            The app allows users to enter journal entries, receive AI-generated insights on their mood, and track long-term emotional trends. Users can also visualize emotions through an interactive emotion wheel.
+        </p>
+        <div class="img-box">
+            <img src="../img/mossy/ui-overview.jpg" alt="Mossy UI" class="explain-img-pc">
+        </div>
+
+        <h3 class="explain__title">Technology Stack</h3>
+        <ul>
+            <li>React Native for cross-platform development</li>
+            <li>Firebase for backend storage</li>
+            <li>AI-powered sentiment analysis for emotion detection</li>
+            <li>Valence-Arousal Model for mood classification</li>
+        </ul>
+
+        <h3 class="explain__title">Challenges & Solutions</h3>
+        <p>
+            One of the key challenges was ensuring accurate AI emotion analysis. To improve accuracy, the app integrates machine learning models trained on a diverse dataset of emotional expressions.
+        </p>
+        <div class="img-box">
+            <img src="../img/mossy/challenges.jpg" alt="Challenges" class="explain-img-pc">
+        </div>
+
+        <h3 class="explain__title">Future Plans</h3>
+        <p>
+            Moving forward, I plan to refine the AI model, conduct further user studies, and prepare a research paper submission to DIS 2026.
+        </p>
+    </section>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+        <div class="footer__container container">
+            <h1 class="footer__title">Miji</h1>
+            <p>Frontend Developer | UI/UX Designer</p>
+
+            <ul class="footer__list">
+                <li>
+                    <a href="../../index.html#projects" class="footer__link">Projects</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
